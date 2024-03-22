@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Universal Sans";
+    src: url(/public/fonts/UniversalSans.ttf);
+}
+
+h1, h2, h3, h4 {
+    font-family: "Universal Sans";
+}
+.animation{
+    transition: all 1s ease;
+}
+.nav-links {
+    background-color: rgba(35, 35, 35, 0.8); /* Establece el color de fondo con un 80% de opacidad */
+    /* Otros estilos... */
+}
+
+ /* Estilos para el modal */
+ #modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 1s ease-out;
+}
